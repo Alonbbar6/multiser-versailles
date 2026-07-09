@@ -13,6 +13,7 @@ export const translations = {
     },
     hero: {
       badge: "4.0 out of 5 (39 Google reviews) — Little Havana's trusted repair shop",
+      fullName: 'Miami Auto Repair Shop Brakes Tune Ups Multiser Versailles',
       headline: 'We show you the problem. We quote you one price. That’s it.',
       body: "Brakes, tune-ups, oil changes and general repairs in Little Havana — done at a fair price, explained in plain English, by the same guy who answers the phone. No surprise charges at pickup, ever.",
       callCta: 'Call (786) 474-1311',
@@ -160,6 +161,7 @@ export const translations = {
     },
     hero: {
       badge: '4.0 de 5 (39 reseñas en Google) — El taller de confianza de la Pequeña Habana',
+      fullName: 'Miami Auto Repair Shop Brakes Tune Ups Multiser Versailles',
       headline: 'Te mostramos el problema. Te damos un solo precio. Así de simple.',
       body: 'Frenos, afinaciones, cambios de aceite y reparaciones generales en la Pequeña Habana — a precio justo, explicado en palabras claras, por la misma persona que contesta el teléfono. Sin cargos sorpresa al recoger tu carro, nunca.',
       callCta: 'Llama al (786) 474-1311',
