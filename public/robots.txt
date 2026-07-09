@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alonbbar6.github.io/multiser-versailles/sitemap.xml

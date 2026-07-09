@@ -131,6 +131,7 @@ export const translations = {
       visitTitle: 'Visit or Call',
       address: '3231 SW 8th St, Miami, FL 33135',
       addressNote: 'Little Havana, wheelchair-accessible entrance',
+      directions: 'Get Directions',
       cardsNote: 'All major credit & debit cards accepted',
     },
     footer: {
@@ -267,6 +268,7 @@ export const translations = {
       visitTitle: 'Visítanos o Llama',
       address: '3231 SW 8th St, Miami, FL 33135',
       addressNote: 'Pequeña Habana, entrada accesible para sillas de ruedas',
+      directions: 'Cómo Llegar',
       cardsNote: 'Aceptamos todas las tarjetas de crédito y débito principales',
     },
     footer: {
