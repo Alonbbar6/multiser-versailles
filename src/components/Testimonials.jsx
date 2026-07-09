@@ -30,6 +30,9 @@ export default function Testimonials() {
             ))}
           </div>
           <h2 className="mt-3 text-3xl sm:text-4xl text-ink">{t.testimonials.title}</h2>
+          {t.testimonials.translationNote && (
+            <p className="mt-1 text-xs text-muted">{t.testimonials.translationNote}</p>
+          )}
         </div>
 
         <div className="mt-10 relative">

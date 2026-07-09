@@ -3,6 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import { useLanguage } from '../i18n/LanguageContext'
 
+// ⚠️ PLACEHOLDER PRICING — these ranges are AI-estimated, not real prices
+// from the shop. Confirm actual figures with Miguel before launch; wrong
+// numbers here directly undercut the site's "no surprise charges" promise.
 const SERVICE_PRICES = {
   'brakes-front': { min: 120, max: 260 },
   'brakes-full': { min: 220, max: 420 },

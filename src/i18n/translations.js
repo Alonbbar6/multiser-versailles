@@ -12,12 +12,12 @@ export const translations = {
       call: '(786) 474-1311',
     },
     hero: {
-      badge: "4.6 out of 5 — Little Havana's trusted repair shop",
+      badge: "4.0 out of 5 (39 Google reviews) — Little Havana's trusted repair shop",
       headline: 'We show you the problem. We quote you one price. That’s it.',
       body: "Brakes, tune-ups, oil changes and general repairs in Little Havana — done at a fair price, explained in plain English, by the same guy who answers the phone. No surprise charges at pickup, ever.",
       callCta: 'Call (786) 474-1311',
       estimateCta: 'Get a Free Estimate',
-      hoursLine: 'Open 7 days · Mon–Fri 8am–7pm · Sat 8am–5pm · Sun 8am–3pm · Walk-ins welcome',
+      hoursLine: 'Mon–Fri 8am–7pm · Call for weekend availability · Walk-ins welcome',
     },
     trust: {
       title: 'No surprises. Ever.',
@@ -37,6 +37,10 @@ export const translations = {
         },
       ],
     },
+    // ⚠️ PLACEHOLDER PRICING — priceRange values below (and SERVICE_PRICES in
+    // EstimateCalculator.jsx) are AI-estimated, not real prices from the shop.
+    // Confirm actual ranges with Miguel before this site goes live — wrong
+    // prices directly undercut the site's "no surprise charges" promise.
     services: {
       title: 'What we work on',
       subtitle: 'Straightforward pricing ranges so you know roughly what to expect before you even walk in.',
@@ -87,23 +91,30 @@ export const translations = {
       ],
       rangeLabel: 'Estimated range',
       rangeNote: 'Final price confirmed in person before any work starts — never changes after.',
+      sampleNote: 'Sample pricing for this preview — real ranges to be confirmed with the shop.',
       ctaButton: 'Hold this estimate — call to book',
       confirmedText: 'Give us a call at (786) 474-1311 to lock in this estimate',
     },
+    // Real reviews pulled from the Google Places Details API for this exact
+    // listing (place_id ChIJkzc0pBy32YgRvoeWLIUeCgw) — 4.0/5 from 39 reviews
+    // at time of pulling. These 3 are genuine 5-star reviews, lightly
+    // trimmed with "…" (no wording changed). A real 1-star complaint also
+    // exists and is intentionally not featured here — same as any business
+    // review section — but the aggregate score above is the real one.
     testimonials: {
-      title: '4.6 out of 5 from the neighborhood',
+      title: '4.0 out of 5 from 39 Google reviews',
       reviews: [
         {
-          quote: "Miguel showed me exactly what was wrong with my brakes before he touched anything. Price he quoted was the price I paid. Haven't gone anywhere else since.",
-          name: 'Local customer',
+          quote: "I cannot express enough gratitude for the outstanding service provided by Multiser Versailles and its owner, Miguel. On Christmas Day, my family member mistakenly fueled my gasoline car with diesel, and we were in a desperate situation. Thankfully, Miguel's shop was open, and he went above and beyond to assist us. Miguel swiftly organized a tow truck to bring the car in, took the time to thoroughly explain the issue and the necessary repairs, and then efficiently fixed the problem within 3-4 hours on Christmas Day.",
+          name: 'Yao G. — Google review',
         },
         {
-          quote: "Fast, honest, and they don't try to sell you stuff you don't need. Clean shop, fair prices, and Miguel actually explains things instead of talking over your head.",
-          name: 'Local customer',
+          quote: "Best auto repair shop in Miami. Expert mechanics, great customer service, fast service. These folks will go out of their way to fix your car at the cheapest possible cost. The owner is the chief mechanic and he is always on site to offer free consultation advice or future diagnostic… Any misunderstandings or problems are taken care of immediately by Miguel the owner.",
+          name: 'Ben B. — Google review',
         },
         {
-          quote: "Walked in without an appointment on a Saturday and they still took care of me. That kind of flexibility matters when you can't take time off work.",
-          name: 'Local customer',
+          quote: 'Me and my husband went today without an appointment and they greeted us very friendly and took care of us very professionally and right away. The place was clean. They provided great service.',
+          name: 'Noemí R. — Google review',
         },
       ],
       prevAria: 'Previous review',
@@ -112,18 +123,18 @@ export const translations = {
     hoursContact: {
       hoursTitle: 'Hours',
       days: [
+        // TODO(owner): only Mon–Fri hours were confirmed in research notes.
+        // Add Saturday/Sunday rows here once Miguel confirms weekend hours.
         { day: 'Monday – Friday', time: '8:00 AM – 7:00 PM' },
-        { day: 'Saturday', time: '8:00 AM – 5:00 PM' },
-        { day: 'Sunday', time: '8:00 AM – 3:00 PM' },
       ],
-      walkins: 'Walk-ins welcome — no appointment needed.',
+      walkins: 'Walk-ins welcome — no appointment needed. Call ahead for weekend hours.',
       visitTitle: 'Visit or Call',
       address: '3231 SW 8th St, Miami, FL 33135',
       addressNote: 'Little Havana, wheelchair-accessible entrance',
       cardsNote: 'All major credit & debit cards accepted',
     },
     footer: {
-      copyright: 'Multiser Versailles, Inc.',
+      copyright: 'Multiser Versailles',
     },
     stickyCall: {
       label: 'Call Now — (786) 474-1311',
@@ -146,12 +157,12 @@ export const translations = {
       call: '(786) 474-1311',
     },
     hero: {
-      badge: '4.6 de 5 — El taller de confianza de la Pequeña Habana',
+      badge: '4.0 de 5 (39 reseñas en Google) — El taller de confianza de la Pequeña Habana',
       headline: 'Te mostramos el problema. Te damos un solo precio. Así de simple.',
       body: 'Frenos, afinaciones, cambios de aceite y reparaciones generales en la Pequeña Habana — a precio justo, explicado en palabras claras, por la misma persona que contesta el teléfono. Sin cargos sorpresa al recoger tu carro, nunca.',
       callCta: 'Llama al (786) 474-1311',
       estimateCta: 'Pide un Estimado Gratis',
-      hoursLine: 'Abierto los 7 días · Lun–Vie 8am–7pm · Sáb 8am–5pm · Dom 8am–3pm · Se aceptan walk-ins',
+      hoursLine: 'Lun–Vie 8am–7pm · Llama para horario de fin de semana · Se aceptan walk-ins',
     },
     trust: {
       title: 'Sin sorpresas. Nunca.',
@@ -224,20 +235,23 @@ export const translations = {
       ctaButton: 'Reservar este estimado — llama para agendar',
       confirmedText: 'Llámanos al (786) 474-1311 para confirmar este estimado',
     },
+    // Real Google reviews (see English block for source/place_id), translated
+    // from the original English — same pattern Google's own review UI uses.
     testimonials: {
-      title: '4.6 de 5 según el vecindario',
+      title: '4.0 de 5 según 39 reseñas en Google',
+      translationNote: 'Reseñas reales de Google, traducidas del inglés.',
       reviews: [
         {
-          quote: 'Miguel me mostró exactamente qué estaba mal con mis frenos antes de tocar nada. El precio que me dio fue el precio que pagué. No he ido a otro lado desde entonces.',
-          name: 'Cliente local',
+          quote: "No puedo expresar suficiente gratitud por el excelente servicio que nos brindaron Multiser Versailles y su dueño, Miguel. El día de Navidad, un familiar mío puso diésel por error en mi carro de gasolina, y estábamos en una situación desesperada. Por suerte, el taller de Miguel estaba abierto, y él hizo mucho más de lo esperado para ayudarnos. Organizó rápidamente una grúa para traer el carro, se tomó el tiempo de explicar bien el problema y las reparaciones necesarias, y arregló todo en 3 a 4 horas ese mismo día de Navidad.",
+          name: 'Yao G. — reseña en Google',
         },
         {
-          quote: 'Rápido, honesto, y no tratan de venderte cosas que no necesitas. Taller limpio, precios justos, y Miguel de verdad te explica las cosas en vez de hablar como si no entendieras.',
-          name: 'Cliente local',
+          quote: 'El mejor taller de mecánica en Miami. Mecánicos expertos, excelente servicio al cliente, servicio rápido. Hacen lo posible por arreglar tu carro al precio más bajo posible. El dueño es el mecánico principal y siempre está presente para ofrecer consultas o diagnósticos gratis… Cualquier malentendido o problema lo resuelve de inmediato Miguel, el dueño.',
+          name: 'Ben B. — reseña en Google',
         },
         {
-          quote: 'Llegué sin cita un sábado y aun así me atendieron. Esa flexibilidad importa mucho cuando no puedes faltar al trabajo.',
-          name: 'Cliente local',
+          quote: 'Mi esposo y yo fuimos hoy sin cita y nos recibieron muy amablemente, atendiéndonos de forma muy profesional y de inmediato. El lugar estaba limpio. Nos dieron un excelente servicio.',
+          name: 'Noemí R. — reseña en Google',
         },
       ],
       prevAria: 'Reseña anterior',
@@ -246,18 +260,17 @@ export const translations = {
     hoursContact: {
       hoursTitle: 'Horario',
       days: [
+        // TODO(owner): only Mon–Fri hours were confirmed in research notes.
         { day: 'Lunes – Viernes', time: '8:00 a.m. – 7:00 p.m.' },
-        { day: 'Sábado', time: '8:00 a.m. – 5:00 p.m.' },
-        { day: 'Domingo', time: '8:00 a.m. – 3:00 p.m.' },
       ],
-      walkins: 'Se aceptan walk-ins — no necesitas cita.',
+      walkins: 'Se aceptan walk-ins — no necesitas cita. Llama para confirmar horario de fin de semana.',
       visitTitle: 'Visítanos o Llama',
       address: '3231 SW 8th St, Miami, FL 33135',
       addressNote: 'Pequeña Habana, entrada accesible para sillas de ruedas',
       cardsNote: 'Aceptamos todas las tarjetas de crédito y débito principales',
     },
     footer: {
-      copyright: 'Multiser Versailles, Inc.',
+      copyright: 'Multiser Versailles',
     },
     stickyCall: {
       label: 'Llama Ahora — (786) 474-1311',
