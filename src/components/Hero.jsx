@@ -7,8 +7,13 @@ export default function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden">
-      <div className="brand-gradient absolute inset-0 opacity-95" aria-hidden="true" />
-      <div className="absolute inset-0 bg-midnight-charcoal/40" aria-hidden="true" />
+      <div
+        className="absolute inset-0 bg-cover bg-[position:75%_center]"
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-shop.webp)` }}
+        aria-hidden="true"
+      />
+      <div className="brand-gradient absolute inset-0 opacity-80 mix-blend-multiply" aria-hidden="true" />
+      <div className="absolute inset-0 bg-midnight-charcoal/55" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
         <motion.div

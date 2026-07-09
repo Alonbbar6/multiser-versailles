@@ -32,6 +32,21 @@ export default function TrustPanel() {
         </motion.div>
 
         <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="mt-10 overflow-hidden rounded-2xl shadow-md"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}images/trust-shop.webp`}
+            alt={t.trust.photoAlt}
+            className="w-full h-[280px] sm:h-[360px] object-cover"
+            loading="lazy"
+          />
+        </motion.div>
+
+        <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"

@@ -22,6 +22,7 @@ export const translations = {
     trust: {
       title: 'No surprises. Ever.',
       subtitle: "We know what it feels like to get quoted one price and charged another. That's not how we run this shop.",
+      photoAlt: 'Multiser Versailles mechanics working on a car in the shop',
       items: [
         {
           title: 'The price we quote is the price you pay',
@@ -168,6 +169,7 @@ export const translations = {
     trust: {
       title: 'Sin sorpresas. Nunca.',
       subtitle: 'Sabemos lo que se siente que te den un precio y te cobren otro. Así no trabajamos en este taller.',
+      photoAlt: 'Mecánicos de Multiser Versailles trabajando en un carro en el taller',
       items: [
         {
           title: 'El precio que te damos es el precio que pagas',
