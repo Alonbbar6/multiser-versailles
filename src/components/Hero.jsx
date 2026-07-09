@@ -27,11 +27,11 @@ export default function Hero() {
             {t.hero.badge}
           </div>
 
-          <p className="mt-5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-white/70">
+          <p className="mt-5 text-lg sm:text-xl font-semibold uppercase tracking-wide text-white drop-shadow-md">
             {t.hero.fullName}
           </p>
 
-          <h1 className="mt-2 text-4xl sm:text-5xl lg:text-6xl font-display leading-[1.1] text-white">
+          <h1 className="mt-3 text-4xl sm:text-5xl lg:text-6xl font-display leading-[1.1] text-white">
             {t.hero.headline}
           </h1>
 
